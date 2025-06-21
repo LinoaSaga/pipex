@@ -6,7 +6,7 @@
 #    By: ljudd <ljudd@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/24 09:37:05 by ljudd             #+#    #+#              #
-#    Updated: 2025/06/21 17:23:11 by ljudd            ###   ########.fr        #
+#    Updated: 2025/06/21 18:00:15 by ljudd            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,9 @@ SRC				= pipex.c \
 	utils.c
 SOURCES			= $(addprefix $(SRC_PATH), $(SRC))
 SRC_BONUS		= pipex_bonus.c \
-	exit.c \
-	exec.c \
-	utils.c
+	exit_bonus.c \
+	exec_bonus.c \
+	utils_bonus.c
 SOURCES_BONUS	= $(addprefix $(SRC_PATH), $(SRC_BONUS))
 
 # Objects
@@ -82,7 +82,7 @@ fclean: clean
 
 re: fclean all
 
-bonus : $(OBJECTS_BONUS) $(LIBFT)
+bonus : $(LIBFT) $(OBJECTS_BONUS)
 	@printf "$(BLUE)%s$(RESET): $(YELLOW)Building with bonus $(NAME)...$(RESET)\n" $(NAME)
 	@$(CC) $(CFLAGS) $(OBJECTS_BONUS) $(LIBFT_FLAGS) -o $(NAME)
 	@printf "$(BLUE)%s$(RESET): $(GREEN)Successfully built $(NAME)$(RESET)\n" $(NAME)

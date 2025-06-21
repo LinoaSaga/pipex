@@ -6,11 +6,11 @@
 /*   By: ljudd <ljudd@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 18:00:38 by ljudd             #+#    #+#             */
-/*   Updated: 2025/06/21 16:06:38 by ljudd            ###   ########.fr       */
+/*   Updated: 2025/06/21 17:56:08 by ljudd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 int	main(int argc, char **argv, char **envp)
 {
