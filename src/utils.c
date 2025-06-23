@@ -6,7 +6,7 @@
 /*   By: ljudd <ljudd@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 15:51:20 by ljudd             #+#    #+#             */
-/*   Updated: 2025/06/21 17:49:52 by ljudd            ###   ########.fr       */
+/*   Updated: 2025/06/23 10:24:03 by ljudd            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,9 @@ void	get_cmds(char **argv, t_pipex *p)
 		if (!p->cmds[i].cmd_argv || !p->cmds[i].cmd_argv[0])
 			exit_pipex(p, "error while parsing command arguments\n", NULL, 1);
 		if (ft_strncmp(p->cmds[i].cmd_argv[0], "/", 1) == 0)
+			p->cmds[i].cmd_path = ft_strdup(p->cmds[i].cmd_argv[0]);
+		else if (ft_strstr(p->cmds[i].cmd_argv[0], "./")
+			|| ft_strstr(p->cmds[i].cmd_argv[0], "../"))
 			p->cmds[i].cmd_path = ft_strdup(p->cmds[i].cmd_argv[0]);
 		else
 			find_cmd(p, i);

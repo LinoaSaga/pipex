@@ -1,4 +1,5 @@
 pipex
 *.o
 *.d
-/42_pipex_tester
+42_pipex_tester/
+tester_pipex.sh

@@ -1,0 +1,4 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ljudd     163444  0.0  0.0      0     0 pts/0    Z+   10:26   0:00 [date] <defunct>
+ljudd     163445  0.0  0.0      0     0 pts/0    Z+   10:26   0:00 [env] <defunct>
+ljudd     163446  0.0  0.0      0     0 pts/0    Z+   10:26   0:00 [ls] <defunct>
